@@ -20,7 +20,7 @@ const AddDay = ({onAddDay}) => {
     <form className='add-form' onSubmit={onSubmit}>
         <div className='form-control'>
             <label>Day Number</label>
-            <input type='number' placeholder='Day number' value={dayNum} onChange={(e) => setDayNum(e.target.value)} />
+            <input type='number' placeholder='Day number' value={dayNum} onChange={(e) => setDayNum(Number(e.target.value))} />
         </div>
         <input type='submit' value='Save Day' className='btn btn-block'></input>
     </form>
