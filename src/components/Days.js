@@ -1,13 +1,18 @@
 import Day from './Day'
 
-const Days = ({days, onDelete, onSelect}) => {
+const Days = ({days, onDelete, onSelect, showDays}) => {
 
   return (
+    
     <>
-      {days.map((day) => (
+      
+      {showDays && days.map((day) => (
         <Day key={day.dayID} day={day} onDelete={onDelete} onSelect={onSelect}/>
       ))}  
+    
     </>
+      
+      
   )
 }
 
