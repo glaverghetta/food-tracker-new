@@ -1,7 +1,7 @@
 import Food from './Food'
 
 const Foods = ({foods, onDelete}) => {
-    if(foods !== undefined) {
+    if(foods !== undefined && foods.length > 0) {
         return (
             <>
             {foods.map((food) => (
