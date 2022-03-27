@@ -6,3 +6,11 @@ To run the tracker, download the project and open in VS Code. Make sure you have
 npm start
 
 This will open the tracker in your default browser.
+
+Note: You may get the following error when running npm start:
+  'react-scripts' is not recognized as an internal or external command, operable program, or batch file.
+  
+In this case, run the following command:
+npm update
+
+Then run npm start again to load the food tracker.
